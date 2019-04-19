@@ -1,4 +1,4 @@
-clear all
+clear all, close all
 for i = 1:43200
 
 
@@ -84,6 +84,11 @@ for i = 1:43200
     X_eci(1,i) = x_eci;
     Y_eci(1,i) = y_eci;
     Z_eci(1,i) = z_eci;
+    
+    %Нахождение азимута и угла места
+    E = ECEFtoENU(x_eci, y_eci, z_eci);
+    A = ECEFtoENU(x_eci, y_eci, z_eci);
+    [azimuth,elevation,r] = cart2sph(x_ecef,y_ecef,z_ecef);
 
 end
 
@@ -100,6 +105,12 @@ x = R.*sin(th).*cos(ph);
 y = R.*sin(th).*sin(ph);
 z = R.*cos(th);
 
+lat = degtorad(55.75);
+lon = degtorad(37.62);
+x_msk = R*cos(lat)*cos(lon);
+y_msk = R*cos(lat)*sin(lon);
+z_msk = R*sin(lat);
+
 figure;   %ecef
 surf(x,y,z);
 axis equal
@@ -112,11 +123,12 @@ xlabel('X, m');
 ylabel('Y, m'); 
 zlabel('Z, m'); 
 
+
 figure ;
 surf(x,y,z);
 axis equal
 hold on
-plot3(X_eci(1,:), Y_eci(1,:),Z_eci(1,:));
+plot3(X_eci(1,:), Y_eci(1,:),Z_eci(1,:),x_msk,y_msk,z_msk, 'k.','MarkerSize',20 );
 axis vis3d
 grid on
 title('Earth-centered inertial (ECI) coordinate system'); 
