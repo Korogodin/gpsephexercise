@@ -86,13 +86,14 @@ for i = 1:43200
     Z_eci(1,i) = z_eci;
     
     %Нахождение азимута и угла места
+    p = sqrt((x_ecef)^2 + (y_ecef)^2 +(z_ecef)^2) - 6371000;
  
-    lat = (55.75);
-    lon = (37.62);
+    lat = 55.75;
+    lon = 37.62;
     [East,North,Up] = ecef2enu(x_ecef,y_ecef,z_ecef, lat, lon, 6371000, wgs84Ellipsoid );
   
-    E = asin(East);
-    A = atan(East/North);
+    E = asin(degtorad(Up)/p);
+    A = atan(degtorad(East/North));
     E_i(1,i) = cos(E);
     A_i(1,i) = A;    
  
@@ -100,7 +101,7 @@ for i = 1:43200
 
 end
 
-polar (A_i(1,:),E_i(1,:));
+polar (-A_i(1,:),E_i(1,:));
 
 
     
