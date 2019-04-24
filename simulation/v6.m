@@ -94,15 +94,22 @@ for i = 1:19860
     p = sqrt(East^2 + North^2 + Up^2);
   
     El = asin(Up/p);
-    Az = atan(East/North);
-    E_i(1,i) = -(cos(El));
-    A_i(1,i) = Az;    
+    Az = atan2(East,North);
+    E_i(1,i) = -El*180/pi + 90;
+    A_i(1,i) = Az;  
  
-    
-
+ 
 end
 
+figure;
+plot(E_i(1,:)); 
+grid on;
+
+
+
+figure;
 polar (A_i(1,:),E_i(1,:));
+
 camroll(90)
 
 
