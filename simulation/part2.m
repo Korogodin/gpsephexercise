@@ -11,7 +11,7 @@ clc;
 % Square root of semi-major axis
 A = 26560971.874;
 % Ephemerides reference epoch in seconds within the week
-Toe = 288000;
+Toe = 288018;
 % Mean anomaly at reference epoch
 M0 = degtorad(2.01704);
 % Longitude of ascending node at the beginning of the week
@@ -42,7 +42,7 @@ Cic = -8.7544e-8;
 % Решение
 for k=1:43200
     
-    T = 302400 + k;
+    T = 302418  + k;
     Tk = T - Toe;
     % Time from ephemeris reference epoch
     if (Tk > 302400) 
@@ -64,7 +64,7 @@ for k=1:43200
     while(true)
         Ek = Mk + e*sin(Ek_prev);
 
-        if (abs(Ek_prev - Ek) <= 0.0000001)
+        if (abs(Ek_prev - Ek) <= 0.00000001)
             break;
         end 
         
@@ -115,7 +115,7 @@ for k=1:43200
     moscowHeight = 150;
  
     [East, North, Up] = ecef2enu(xk_fixed(k), yk_fixed(k), zk_fixed(k), moscowLatitude, moscowLongitude, moscowHeight, wgs84Ellipsoid);
-    rangeFromRecieverToSatellite = sqrt(East^2 + North^2 + Up^2);
+    rangeFromRecieverToSatellite = sqrt((East)^2 + (North)^2 + (Up)^2);
   
     elevation(k) = -asin(Up/rangeFromRecieverToSatellite)*180/pi + 90;
     azimuth(k) = atan2(East, North);
@@ -128,7 +128,15 @@ title('SkyView');
 grid on;
 camroll(90);
 
+% График зависимости Elevation от времени
+figure;
+plot(elevation);
+title('График зависимости Elevation от времени');
+xlabel('Время наблюдения');
+ylabel('Угол места, град.');
+grid on;
 
+%{
 % Графически отобразим траекторию спутника №9 в системе ECI и ECEF
 thetavec = linspace(0, pi, 50);
 phivec = linspace(0, 2*pi, 50);
@@ -170,7 +178,7 @@ title('Траектория спутника в системе ECI');
 xlabel('x, м'); 
 ylabel('y, м'); 
 zlabel('z, м'); 
-
+%}
 
 
 
