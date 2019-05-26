@@ -1,0 +1,17 @@
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/CMakeFiles/install/local.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/CMakeFiles/install.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/CMakeFiles/list_install_components.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/src/CMakeFiles/rebuild_cache.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/src/CMakeFiles/gpssvpos-static.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/src/CMakeFiles/install/local.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/src/CMakeFiles/install.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/src/CMakeFiles/edit_cache.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/src/CMakeFiles/gpssvpos.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/src/CMakeFiles/list_install_components.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/test/CMakeFiles/install/local.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/test/CMakeFiles/install.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/test/CMakeFiles/edit_cache.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/test/CMakeFiles/rebuild_cache.dir
+O:/Домашняя работа/V курс/Курсовой Корогодин/Часть 3/libgpssvpos/out/build/x64-Debug/test/CMakeFiles/list_install_components.dir
