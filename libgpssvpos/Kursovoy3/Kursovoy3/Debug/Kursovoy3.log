@@ -1,0 +1,86 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  Kursovoy3.cpp
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(78,9): warning C4244:  инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(80,17): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(90,11): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(99,11): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:  инициализация: преобразование "_Ty" в "_Ty2", возможна потеря данных
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:             _Ty=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         and
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:             _Ty2=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         ]
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :  выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<const _Kty,_Ty>::pair<const char(&)[2],double,0>(_Other1,_Other2 &&) noexcept(false)"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         with
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         [
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Kty=std::string,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Ty=float,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Other1=const char (&)[2],
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Other2=double
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         ]
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :  выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<const _Kty,_Ty>::pair<const char(&)[2],double,0>(_Other1,_Other2 &&) noexcept(false)"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         with
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         [
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Kty=std::string,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Ty=float,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Other1=const char (&)[2],
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Other2=double
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:  инициализация: преобразование "_Ty" в "_Ty2", возможна потеря данных
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:             _Ty=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         and
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:             _Ty2=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         ]
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :  выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<const _Kty,_Ty>::pair<const char(&)[4],int,0>(_Other1,_Other2 &&) noexcept(false)"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         with
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         [
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Kty=std::string,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Ty=float,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Other1=const char (&)[4],
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Other2=int
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         ]
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :  выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<const _Kty,_Ty>::pair<const char(&)[4],int,0>(_Other1,_Other2 &&) noexcept(false)"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         with
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         [
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Kty=std::string,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Ty=float,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Other1=const char (&)[4],
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Other2=int
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:  инициализация: преобразование "_Ty" в "_Ty2", возможна потеря данных
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:             _Ty=__int64
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         and
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:             _Ty2=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\utility(123,1): warning C4244:         ]
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :  выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<const _Kty,_Ty>::pair<const char(&)[2],__int64,0>(_Other1,_Other2 &&) noexcept(false)"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         with
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         [
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Kty=std::string,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Ty=float,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Other1=const char (&)[2],
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :             _Other2=__int64
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(35): message :         ]
+  Создание кода...
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :  выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<const _Kty,_Ty>::pair<const char(&)[2],__int64,0>(_Other1,_Other2 &&) noexcept(false)"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         with
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         [
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Kty=std::string,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Ty=float,
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Other1=const char (&)[2],
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :             _Other2=__int64
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(18): message :         ]
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  AssemblyInfo.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Kursovoy3.vcxproj -> C:\Users\andre\Desktop\MVS tests\Kursovoy3\Debug\Kursovoy3.exe
