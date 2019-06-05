@@ -1,0 +1,18 @@
+#include <iostream>
+
+#include "tests.h"
+
+
+using namespace std;
+
+int main()
+{
+    Tests tests;
+   if(tests.run_tests())
+   {
+       printf("SUCCESS! TESTS PASSED");
+   }
+
+
+    return 0;
+}
