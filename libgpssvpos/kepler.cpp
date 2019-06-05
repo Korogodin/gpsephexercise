@@ -13,10 +13,10 @@ Kepler::Kepler()
 
 
 
-float Kepler::solve_keppler_equations(float meanAnomaly, float orbitalEccentricity, float accuracy) {
+double Kepler::solve_keppler_equations(double meanAnomaly, double orbitalEccentricity, double accuracy) {
 
-        float prevE_k = 0;
-        float keplersSolution = 0;
+        double prevE_k = 0;
+        double keplersSolution = 0;
 
         while (true)
         {

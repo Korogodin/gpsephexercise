@@ -5,9 +5,9 @@
 
 typedef struct CoordinatesOfSatellite
 {
-        float ecefX;
-        float ecefY;
-        float ecefZ;
+        double ecefX;
+        double ecefY;
+        double ecefZ;
 
 
 } CoordinatesOfSatellite;

@@ -7,7 +7,7 @@ class Kepler
 public:
     Kepler();
 
-    float solve_keppler_equations(float meanAnomaly, float eccentricity, float accuracy);
+    double solve_keppler_equations(double meanAnomaly, double eccentricity, double accuracy);
 
 
 };

@@ -10,7 +10,7 @@ int main()
     Tests tests;
    if(tests.run_tests())
    {
-       printf("SUCCESS! TESTS PASSED");
+       printf("SUCCESS! TESTS PASSED\n");
    }
 
 

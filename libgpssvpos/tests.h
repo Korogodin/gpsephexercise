@@ -9,7 +9,7 @@ public:
 
     int run_tests();
 private:
-    int test_value(int momentOfTime, float ecefX_answer, float ecefY_answer, float ecefZ_answer, float e);
+    int test_value(int momentOfTime, double ecefX_answer, double ecefY_answer, double ecefZ_answer);
 
 private:
     Gpsvspos gpsvspos;

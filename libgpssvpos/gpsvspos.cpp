@@ -12,28 +12,28 @@ Gpsvspos::Gpsvspos()
 
 
 
-#define TIME_SHIFT 18 
+
 
 typedef struct Params
 {
-        float A; 
-        float M0; 
-        float Toe; 
-        float omegaZero;
-        float omega;
-        float omegaDot;
-        float omegaDotE;
-        float eccentricity; 
-        float inclination;
-        float motionDiff;
-        float M;
-        float IDOT; 
-        float Cus; 
-        float Cuc;
-        float Crs;
-        float Crc;
-        float Cis;
-        float Cic;
+        double A;
+        double M0;
+        double Toe;
+        double omegaZero;
+        double omega;
+        double omegaDot;
+        double omegaDotE;
+        double eccentricity;
+        double inclination;
+        double delta_n;
+        double mu;
+        double IDOT;
+        double Cus;
+        double Cuc;
+        double Crs;
+        double Crc;
+        double Cis;
+        double Cic;
 
 } Params;
 
@@ -75,33 +75,31 @@ void Gpsvspos::coords_init(void)
         coordinatesOfSatellite.ecefX = 0.0;
         coordinatesOfSatellite.ecefY = 0.0;
         coordinatesOfSatellite.ecefZ = 0.0;
-        coordinatesOfSatellite.eciX = 0.0;
-        coordinatesOfSatellite.eciY = 0.0;
-        coordinatesOfSatellite.eciZ = 0.0;
+
 }
 
 
 
 
 
-float degToRad(float degree) { 
+double degToRad(double degree) {
         return degree * (M_PI/180);
 }
 
 CoordinatesOfSatellite Gpsvspos::findPositionOfSatellite(int momentOfTime) {
 
-        params.Toe	 = params.Toe + TIME_SHIFT;
+        params.Toe	 = params.Toe + 18;
         params.M0	 = degToRad(params.M0);
         params.omegaZero  = degToRad(params.omegaZero);
         params.omega	 = degToRad(params.omega);
         params.omegaDot   = degToRad(params.omegaDot);
         params.inclination = degToRad(params.inclination);
-        params.motionDiff  = degToRad(params.motionDiff);
+        params.delta_n  = degToRad(params.delta_n);
         params.IDOT		  = degToRad(params.IDOT);
 
         int Tk = momentOfTime - (int)params.Toe;
         // Set accuracy of calculations
-        float accuracy = pow(10, -8);
+        double accuracy = pow(10, -8);
 
         if (Tk > 302400) { 
                 Tk = Tk - 604800;
@@ -110,40 +108,40 @@ CoordinatesOfSatellite Gpsvspos::findPositionOfSatellite(int momentOfTime) {
         }
 
         // Compute mean motion
-        float n0 = pow(params.M/(pow(params.A, 3)), 0.5);
+        double n0 = pow(params.mu/(pow(params.A, 3)), 0.5);
         // Correct mean motion
-        float n = n0 + params.motionDiff;
+        double n = n0 + params.delta_n;
         // Mean anomaly
-        float meanAnomaly = params.M0 + n * Tk;
+        double meanAnomaly = params.M0 + n * Tk;
 
         // Solve Keplers equation
-        float Ek = kepler.solve_keppler_equations(meanAnomaly, params.eccentricity, accuracy);
+        double Ek = kepler.solve_keppler_equations(meanAnomaly, params.eccentricity, accuracy);
         // Callulate a true anomaly
-        float Vk = atan2((pow((1 - params.eccentricity * params.eccentricity), 0.5) * sin(Ek) / (1 - params.eccentricity * cos(Ek))), ((cos(Ek) - params.eccentricity) / (1 - params.eccentricity * cos(Ek))));
+        double Vk = atan2((pow((1 - params.eccentricity * params.eccentricity), 0.5) * sin(Ek) / (1 - params.eccentricity * cos(Ek))), ((cos(Ek) - params.eccentricity) / (1 - params.eccentricity * cos(Ek))));
 
         // Argument of Latitude
-        float Fk = Vk + params.omega;
+        double Fk = Vk + params.omega;
         // Second harmonic perturbations
-        float deltaUk = params.Cus * sin(2*Fk) + params.Cus * cos(2*Fk);
-        float deltaRk = params.Crs * sin(2*Fk) + params.Crc * cos(2*Fk);
-        float deltaIk = params.Cis * sin(2*Fk) + params.Cic * cos(2*Fk);
+        double deltaUk = params.Cus * sin(2*Fk) + params.Cus * cos(2*Fk);
+        double deltaRk = params.Crs * sin(2*Fk) + params.Crc * cos(2*Fk);
+        double deltaIk = params.Cis * sin(2*Fk) + params.Cic * cos(2*Fk);
         // Correct argument of Latitude
-        float Uk = Fk + deltaUk;
+        double Uk = Fk + deltaUk;
         // Correct radius
-        float Rk = params.A * (1 - params.eccentricity * cos(Ek)) + deltaRk;
+        double Rk = params.A * (1 - params.eccentricity * cos(Ek)) + deltaRk;
         // Correct inclination
-        float Ik = params.inclination + deltaIk + params.IDOT * Tk;
+        double Ik = params.inclination + deltaIk + params.IDOT * Tk;
         // Correct longitude of ascending node
-        float Wk = params.omegaZero + (params.omegaDot - params.omegaDotE) * Tk - params.omegaDotE * params.Toe;
+        double Wk = params.omegaZero + (params.omegaDot - params.omegaDotE) * Tk - params.omegaDotE * params.Toe;
 
         // Positions in orbitalplane
-        float x = Rk * cos(Uk);
-        float y = Rk * sin(Uk);
+        double x = Rk * cos(Uk);
+        double y = Rk * sin(Uk);
         // Earth-fixed coordinates
         // Coordinates in ECEF system
-        float ecefX = x * cos(Wk) - y * cos(Ik) * sin(Wk);
-        float ecefY = x * sin(Wk) + y * cos(Uk) * cos(Wk);
-        float ecefZ = y * sin(Ik);
+        double ecefX = x * cos(Wk) - y * cos(Ik) * sin(Wk);
+        double ecefY = x * sin(Wk) + y * cos(Uk) * cos(Wk);
+        double ecefZ = y * sin(Ik);
 
   
 
