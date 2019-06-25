@@ -77,7 +77,7 @@ end
 figure; plot(elevation);
 %% SkyView
 figure; 
-SV=polar (azimuth, elevation);
+SV=polar (azimuth, 90-elevation);
 view([90 -90]);
 grid on; title('SkyView');
 %% ECEF/ECI 3Dplots
@@ -85,11 +85,11 @@ figure;[X,Y,Z]=sphere(20);
 surfl(X*6.371,Y*6.371,Z*6.371);
 hold on; axis equal;
 plot3(xk_ecef/10^6,yk_ecef/10^6,zk_ecef/10^6);
-title('Положения спутника в системе ECEF'); 
-xlabel('x, тыс.км'); ylabel('y, тыс.км'); zlabel('z, тыс.км'); 
+title('ГЏГ®Г«Г®Г¦ГҐГ­ГЁГї Г±ГЇГіГІГ­ГЁГЄГ  Гў Г±ГЁГ±ГІГҐГ¬ГҐ ECEF'); 
+xlabel('x, ГІГ»Г±.ГЄГ¬'); ylabel('y, ГІГ»Г±.ГЄГ¬'); zlabel('z, ГІГ»Г±.ГЄГ¬'); 
 
 figure; [X,Y,Z]=sphere(20);  surfl(X*6.371,Y*6.371,Z*6.371);
 hold on; axis equal;
 plot3(xk_eci/10^6,yk_eci/10^6,zk_eci/10^6); 
-title('Положения спутника в системе ECI'); 
-xlabel('x, тыс.км'); ylabel('y, тыс.км'); zlabel('z, тыс.км');
+title('ГЏГ®Г«Г®Г¦ГҐГ­ГЁГї Г±ГЇГіГІГ­ГЁГЄГ  Гў Г±ГЁГ±ГІГҐГ¬ГҐ ECI'); 
+xlabel('x, ГІГ»Г±.ГЄГ¬'); ylabel('y, ГІГ»Г±.ГЄГ¬'); zlabel('z, ГІГ»Г±.ГЄГ¬');
