@@ -1,0 +1,24 @@
+﻿  Kursovoy3.cpp
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(56,39): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(57,45): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(59,44): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(60,44): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(61,47): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(62,42): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(63,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(64,44): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(65,45): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(66,42): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(67,46): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(68,36): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(69,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(70,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(71,36): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(72,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(73,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(79,10): warning C4244:  инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(81,18): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(90,12): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(96,12): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+  AssemblyInfo.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Kursovoy3.vcxproj -> C:\Users\andre\Desktop\MVS tests\Kursovoy3\Debug\Kursovoy3.exe

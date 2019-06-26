@@ -1,0 +1,30 @@
+﻿  testGPS.cpp
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(56,39): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(57,45): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(59,44): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(60,44): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(61,47): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(62,42): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(63,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(64,44): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(65,45): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(66,42): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(67,46): warning C4305:  аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(68,36): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(69,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(70,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(71,36): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(72,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(73,37): warning C4305:  =: усечение из "double" в "float"
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(79,10): warning C4244:  инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(81,18): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(90,12): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\Kursovoy3\Kursovoy3\Kursovoy3.cpp(96,12): warning C4244:  инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\andre\Desktop\MVS tests\UnitTest\TestGPS\testGPS.cpp(67,23): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\andre\Desktop\MVS tests\UnitTest\TestGPS\testGPS.cpp(68,24): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\andre\Desktop\MVS tests\UnitTest\TestGPS\testGPS.cpp(73,23): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\andre\Desktop\MVS tests\UnitTest\TestGPS\testGPS.cpp(74,24): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\andre\Desktop\MVS tests\UnitTest\TestGPS\testGPS.cpp(79,23): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\andre\Desktop\MVS tests\UnitTest\TestGPS\testGPS.cpp(80,24): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\andre\Desktop\MVS tests\UnitTest\TestGPS\testGPS.cpp(80,24): warning C4018: C:\Users\andre\Desktop\MVS tests\UnitTest\TestGPS\testGPS.cpp(93) : error C4700: использована неинициализированная локальная переменная "gpsParams"
+P:\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(429,5): error MSB6006: "CL.exe" завершилась с кодом 2.
